@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GLobal .gitignore"
+title: "Global .gitignore"
 date: 2014-02-08 18:59:08 +0200
 comments: true
 categories: discoveries
