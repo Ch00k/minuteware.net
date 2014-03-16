@@ -1,1 +1,1 @@
-rvm use --create 2.1@mw_octopress
+rvm use --create 2.1.0@mw_octopress
