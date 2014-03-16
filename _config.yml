@@ -6,7 +6,7 @@ url: http://minuteware.net
 title: minuteware
 subtitle: minute discoveries
 author: Andriy Yurchuk
-simple_search: http://google.com/search
+simple_search: https://www.google.com/search
 description:
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
