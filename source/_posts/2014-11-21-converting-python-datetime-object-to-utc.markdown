@@ -7,7 +7,7 @@ categories: discoveries
 tags: python programming
 ---
 
-While adding support for ISO 8601 date/time strings to Flask-RESTful I was struggling with all that hated Python timezone stuff, specifically with the need to convert a datetime object to UTC timezone. With the libraries that Flask-RESTful was already using this solution looked the easiest:
+While adding [support](https://github.com/flask-restful/flask-restful/pull/345) for ISO 8601 date/time strings to [Flask-RESTful](http://flask-restful.readthedocs.org) I was struggling with all that hated Python timezone stuff, specifically with the need to convert a datetime object to UTC timezone. With the libraries that Flask-RESTful was already using this solution looked the easiest:
 
 ```python
 In [1]: from datetime import datetime
