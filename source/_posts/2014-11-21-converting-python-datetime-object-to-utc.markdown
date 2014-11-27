@@ -32,3 +32,19 @@ Out[9]: datetime.datetime(2014, 11, 21, 8, 28, 45, tzinfo=<UTC>)
 In [10]: datetime.fromtimestamp(timegm(dt_no_offset.utctimetuple()), tz=pytz.UTC)
 Out[10]: datetime.datetime(2014, 11, 21, 10, 30, 45, tzinfo=<UTC>)
 ```
+
+**UPD**
+
+Actually there is a much cleaner way to do the same, using exclusively `pytz`:
+
+```python
+In [68]: def dt_to_utc(dt):
+   ....:     return pytz.UTC.normalize(dt) if dt.tzinfo else dt.replace(tzinfo=pytz.UTC)
+   ....:
+
+In [69]: dt_to_utc(dt_offset)
+Out[69]: datetime.datetime(2014, 11, 21, 8, 28, 45, tzinfo=<UTC>)
+
+In [70]: dt_to_utc(dt_no_offset)
+Out[70]: datetime.datetime(2014, 11, 21, 10, 30, 45, tzinfo=<UTC>)
+```
